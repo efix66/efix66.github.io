@@ -27,3 +27,7 @@ btns.forEach(function (btn) {
     value.textContent = count;
   });
 });
+
+function scrollWin() {
+  window.scrollTo(500, 0);
+}

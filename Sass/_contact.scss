@@ -1,5 +1,7 @@
 .contact-section {
   padding-top: 50px;
+  padding-bottom: 50px;
+
   .contact {
     text-align: center;
   }
@@ -10,6 +12,7 @@
     font-size: 3.5rem;
     i {
       cursor: pointer;
+      color: black;
     }
   }
 }

@@ -85,24 +85,6 @@ body {
   }
 }
 
-//Tehnologies section
-.tehnologies {
-  padding-top: 50px;
-  text-align: center;
-  h1 {
-    font-size: 2rem;
-    letter-spacing: $normal-letter-spacing;
-  }
-}
-
-.teh-cards-container {
-  padding-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(2, 400px);
-  justify-content: center;
-  grid-gap: 20px;
-}
-
 //Projects section
 .projects {
   margin-top: 50px;
