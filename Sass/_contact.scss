@@ -1,0 +1,15 @@
+.contact-section {
+  padding-top: 50px;
+  .contact {
+    text-align: center;
+  }
+  .social-contact {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3.5rem;
+    i {
+      cursor: pointer;
+    }
+  }
+}
