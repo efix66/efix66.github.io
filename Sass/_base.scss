@@ -16,7 +16,7 @@ body {
   transform: translateX(-50%) translateY(-50%);
 
   h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     letter-spacing: $normal-letter-spacing;
     color: $primary-color;
   }
@@ -119,3 +119,7 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
 }
+
+// .bounce-in-top {
+//   margin-bottom: 100px;
+// }
