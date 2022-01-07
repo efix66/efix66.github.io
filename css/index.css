@@ -7,6 +7,20 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
 }
 
 .banner {
@@ -19,6 +33,7 @@ body {
   left: 50%;
   text-align: center;
   transform: translateX(-50%) translateY(-50%);
+  overflow: hidden;
 }
 .banner-title h1 {
   font-size: 3rem;
@@ -571,6 +586,10 @@ body {
 
   .flicker-in-1 {
     display: none;
+  }
+
+  .scroll-down h5 {
+    color: #747474;
   }
 
   .teh-cards-container {

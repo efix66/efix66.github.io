@@ -2,6 +2,17 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 .banner {
@@ -14,6 +25,7 @@ body {
   left: 50%;
   text-align: center;
   transform: translateX(-50%) translateY(-50%);
+  overflow: hidden;
 
   h1 {
     font-size: 3rem;
