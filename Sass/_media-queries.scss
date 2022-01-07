@@ -1,5 +1,38 @@
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 768px) {
   .banner-title h1 {
     font-size: 35px;
+  }
+  .flicker-in-1 {
+    display: none;
+  }
+  .teh-cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-teh {
+    width: 70%;
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .project {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .teh-cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-teh {
+    width: 80%;
   }
 }

@@ -97,12 +97,16 @@ body {
   padding-top: 25px;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+
   .project {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 250px;
     height: 250px;
+    margin-top: 20px;
+
     // border: 1px solid black;
     border-radius: 25px;
     text-align: center;
