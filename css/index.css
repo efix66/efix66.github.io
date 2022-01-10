@@ -14,6 +14,7 @@ body {
 html {
   overflow: scroll;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -129,8 +130,18 @@ html {
   font-size: 1.5rem;
   color: black;
 }
-.projects-container .project:hover {
+.projects-container .project {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  color: white;
+  background: black;
+  padding: 15px;
+  text-decoration: none;
 }
 
 .card-teh {

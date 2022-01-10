@@ -9,6 +9,7 @@ body {
 html {
   overflow: scroll;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
@@ -28,14 +29,14 @@ html {
   overflow: hidden;
 
   h1 {
-    font-size: 3rem;
+    font-size: $b-fontSize;
     letter-spacing: $normal-letter-spacing;
     color: $primary-color;
   }
 
   h3 {
     letter-spacing: $small-letter-spacing;
-    font-size: 2rem;
+    font-size: $m-font-size;
     color: $secondary-color;
   }
 }
@@ -131,11 +132,23 @@ html {
       color: black;
     }
   }
-  .project:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  .project {
+    box-shadow: $normal-box-shadow;
   }
 }
 
 // .bounce-in-top {
 //   margin-bottom: 100px;
 // }
+
+//Scroll-to top-button
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  color: white;
+  background: black;
+  padding: 15px;
+  text-decoration: none;
+}
