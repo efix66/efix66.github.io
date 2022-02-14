@@ -11,21 +11,24 @@ window.addEventListener("scroll", function (e) {
   const sectionsSum = firstSectionHeight + secodnSectionHeight;
 
   if (window.scrollY == 0) {
-    console.log("testing");
+    console.log("test1");
+
     controlScrollUp.style.display = "none";
+    // controlScrollUp.classList.add("swirl-out-bck");
   } else if (positionY > sectionsSum) {
     controlScrollUp.style.display = "block";
+    controlScrollUp.classList.add("bounce-in-top");
     console.log("test2");
   }
 });
 
-//Scrool dawn on button press
+//Scrool down on button press
 
 const btnScrolDawn = document.getElementById("button");
 
 btnScrolDawn.addEventListener("click", function () {
   window.scroll({
-    top: 1500,
+    top: 1600,
     left: 0,
     behavior: "smooth",
   });
