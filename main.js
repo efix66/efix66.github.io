@@ -1,5 +1,7 @@
 let controlScrollUp = document.getElementById("keyup123");
 
+controlScrollUp.style.display = "none";
+
 window.addEventListener("scroll", function (e) {
   const firstSection = this.document.querySelector("#banner1");
   const secondSection = this.document.querySelector("#banner2");
@@ -10,14 +12,18 @@ window.addEventListener("scroll", function (e) {
   const positionY = window.scrollY;
   const sectionsSum = firstSectionHeight + secodnSectionHeight;
 
-  if (window.scrollY == 0) {
-    console.log("test1");
+  console.log(window.scrollY);
 
-    controlScrollUp.style.display = "none";
-    // controlScrollUp.classList.add("swirl-out-bck");
+  if (window.scrollY == 0) {
+    controlScrollUp.classList.remove("bounce-in-top");
+    controlScrollUp.classList.add("swirl-out-bck");
+    // controlScrollUp.style.display = "none";
+    console.log("test1");
   } else if (positionY > sectionsSum) {
     controlScrollUp.style.display = "block";
+    controlScrollUp.classList.remove("swirl-out-bck");
     controlScrollUp.classList.add("bounce-in-top");
+
     console.log("test2");
   }
 });
