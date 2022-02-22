@@ -1,4 +1,4 @@
-const { src, dest, watch, series } = require("gulp");
+import { src, dest, watch, series } from "gulp";
 const sass = require("gulp-sass")(require("sass"));
 
 function buildStyles() {
@@ -9,4 +9,5 @@ function watchTask() {
   watch(["Sass/**/*.scss"], buildStyles);
 }
 
-exports.default = series(buildStyles, watchTask);
+const _default = series(buildStyles, watchTask);
+export { _default as default };
