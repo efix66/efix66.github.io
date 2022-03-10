@@ -39,3 +39,5 @@ btnScrolDawn.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+
+Cookies.set("name", "value");
