@@ -7,10 +7,10 @@ window.addEventListener("scroll", function (e) {
   const secondSection = this.document.querySelector("#banner2");
 
   const firstSectionHeight = firstSection.clientHeight;
-  const secodnSectionHeight = secondSection.clientHeight;
+  const secondSectionHeight = secondSection.clientHeight;
 
   const positionY = window.scrollY;
-  const sectionsSum = firstSectionHeight + secodnSectionHeight;
+  const sectionsSum = firstSectionHeight + secondSectionHeight;
 
   console.log(window.scrollY);
 
